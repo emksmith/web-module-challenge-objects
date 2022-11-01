@@ -106,12 +106,9 @@ Use the addReview function below to do the following:
 */
 
 
-function addReview(array, name, rating, feedback){
-  this.array = array;
-  this.name = name;
-  this.rating = rating;
-  this.feedback = feedback;
-return array;
+function addReview(reviews, name, rating, feedback){
+return {reviews, name, rating, feedback}
+
 }
 console.log('task5', addReview(reviews, 'Billy', 2, 'Lame food!'))
 
