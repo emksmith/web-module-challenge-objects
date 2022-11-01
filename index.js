@@ -111,7 +111,7 @@ function addReview(reviews, name, rating, feedback){
  return reviews;
 
 }
-console.log('task5', addReview(reviews, 'Billy', 2, 'Bad food!'))
+console.log('task5', addReview(reviews, {name: 'Billy', rating: 2, feedback: 'Bad food!'}))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
