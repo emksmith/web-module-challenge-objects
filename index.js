@@ -31,7 +31,9 @@ Test your createMenuItems function by doing the following:
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
-
+console.log('task1b', createMenuItem('pizza', 5, 'lunch'))
+console.log('task1b', createMenuItem('omelet', 12, 'breakfast'))
+console.log('task1b', createMenuItem('sandwich', 9, 'lunch'))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -51,9 +53,15 @@ const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  
+  discount: function(person){
+   if (person === 'teacher' || person === 'student'){
+   return (this.price) - (this.price * 0.25)
+   } else if (person === 'public'){
+   return (this.price) - (this.price * .10)
 }
-
+}
+}
+console.log('task2', burger.discount('teacher'))
 
 
 ///////////////Reviews (MVP)///////////////////
@@ -72,7 +80,7 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
-
+console.log('task3', reviews[5].feedback)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 (not auto-tested): 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -81,6 +89,9 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 
+reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
+
+console.log('task 5', reviews)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -95,10 +106,14 @@ Use the addReview function below to do the following:
 */
 
 
-function addReview(/*Your Code Here */){
-  /*Your Code Here */
+function addReview(array, name, rating, feedback){
+  this.array = array;
+  this.name = name;
+  this.rating = rating;
+  this.feedback = feedback;
+return array;
 }
-
+console.log('task5', addReview(reviews, 'Billy', 2, 'Lame food!'))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
