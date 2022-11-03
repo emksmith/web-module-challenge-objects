@@ -91,7 +91,7 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
 
 reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
 
-console.log('task 5', reviews)
+console.log('task 4', reviews)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -107,8 +107,15 @@ Use the addReview function below to do the following:
 
 
 function addReview(reviews, name, rating, feedback){
-  reviews.push(name,rating, feedback)
-return reviews
+  newReview = {}
+  newReview['name'] = name;
+  newReview['rating'] = rating;
+  newReview['feedback'] = feedback
+
+  reviews.push(newReview)
+
+  return reviews
+
 }
 
 console.log('task5', addReview(reviews, 'Billy', 5, 'Great food!'))
