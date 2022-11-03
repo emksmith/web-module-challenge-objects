@@ -107,14 +107,6 @@ Use the addReview function below to do the following:
 
 
 function addReview(reviews, name, rating, feedback){
-  newReview = {}
-  newReview['name'] = name;
-  newReview['rating'] = rating;
-  newReview['feedback'] = feedback
-
-  reviews.push(newReview)
-
-  return reviews
 
 }
 
