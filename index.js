@@ -106,16 +106,16 @@ Use the addReview function below to do the following:
 */
 
 
-function addReview(reviews, name, rating, feedback){
+function addReview(array, name, rating, feedback){
 
   const addedComment = {
   'name': name,
   'rating': rating,
   'feedback':feedback}
 
-  reviews.push(addedComment)
+array.push(addedComment)
 
-  return reviews
+  return array
 
 }
 
@@ -152,7 +152,7 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
+function getLastReview(array) {
   /*Your code here*/
 } 
 
