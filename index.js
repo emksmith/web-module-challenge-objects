@@ -107,11 +107,11 @@ Use the addReview function below to do the following:
 
 
 function addReview(reviews, name, rating, feedback){
- reviews.push(name, rating, feedback)
- return reviews;
-
+  reviews.push(name,rating, feedback)
+return reviews
 }
-console.log('task5', addReview(reviews, {name: 'Billy', rating: 2, feedback: 'Bad food!'}))
+
+console.log('task5', addReview(reviews, 'Billy', 5, 'Great food!'))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
