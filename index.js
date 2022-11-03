@@ -114,7 +114,7 @@ function addReview(reviews, name, rating, feedback){
 
   reviews.push(newReview)
 
-  return reviews;
+  return reviews
 
 }
 
